@@ -8,5 +8,7 @@
 <p>NO</p>
 <% end %>
 
+
+<%= link_to 'Delete', task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %><br>
 <%= link_to 'Edit this task', edit_path %><br>
 <%= link_to 'See all tasks', tasks_path %>
