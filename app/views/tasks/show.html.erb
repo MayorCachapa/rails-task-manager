@@ -1,0 +1,11 @@
+<h1>TASK: <%= @task.title %> </h1>
+<h3>DETAILS:</h3>
+<p><%= @task.details %></p>
+<h3>COMPLETED?</h3>
+<% if @task.completed %>
+    <p>YES</p>
+<% else %>
+<p>NO</p>
+<% end %>
+
+<%= link_to 'See all tasks', tasks_path%>
